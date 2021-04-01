@@ -1,0 +1,291 @@
+
+/*----------------BODY------------------*/
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #222222;
+}
+
+/*----------------CLEARFIX------------------*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+/*----------------DIV------------------*/
+
+div {
+	box-sizing: border-box;
+}
+
+/*----------------HEADER------------------*/
+
+header {
+	background: url(../img/first-bg.jpg) no-repeat center top / cover ;
+	height: 100vh;
+	background-size: cover;
+
+	
+
+}
+
+/*----------------CONTAINER------------------*/
+
+.container {
+	width: 930px;
+	margin: 0 auto;
+}
+
+/*----------------LOGO------------------*/
+
+.Logo {
+	margin-top: 41px;
+	float: left;
+}
+
+/*----------------NAV------------------*/
+
+nav{
+	float: right;
+	margin-top: 45px;
+}
+
+/*----------------MENU------------------*/
+
+.menu {
+	padding:0;
+	margin:0;
+	display: block;
+}
+
+.menu li {
+	float:left;
+	display: block;
+	margin-right:41px;
+	
+
+}	
+
+.menu a {
+	color: #fff;
+	text-decoration: none;		
+	text-transform: uppercase;
+	font-size: 14px;
+	transition:color .2s linear;
+	position: relative;
+
+}
+
+.menu a:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	border-radius: 50px 0 50px 0;
+	
+	background-color: #fed136;
+	opacity: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+
+	transition: opacity .2s linear;
+
+}
+
+.menu li:hover a {
+	color: #fed136;
+}
+
+.menu li:hover a:after {
+	opacity: 1;
+}
+
+
+/*----------------H1------------------*/
+
+h1 {
+	font-size: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 15px;
+}
+
+/*----------------BUTTON------------------*/
+
+.button {
+	background: #fed136;
+	color: #484543;
+	border-radius: 3px;
+	display: block;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 50px;
+	position: relative;
+
+	transition:background .2s linear, 
+	 color .2s linear;
+}
+
+.button:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	border-radius: 0  0 5px 5px;
+	
+	background-color: #fff;
+	opacity: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+
+	transition: opacity .2s linear;
+
+}
+
+
+
+.button:hover:after {
+	opacity: 1;
+}
+
+.button:hover {
+	background-color: #000;
+	color:#fff;
+}
+
+
+
+
+
+/*----------------TITLE------------------*/
+
+.title {
+	padding-top: 115px;
+
+}
+
+.titles__first {
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 180px;
+}
+
+.title h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+
+}
+
+.title p {
+	color: #777777;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+
+
+}
+
+/*----------------SERVICES------------------*/
+
+.services {
+	margin-top: 80px;
+}
+
+.services__item {
+	width: 270px;
+	float: left;
+	text-align: center;
+}
+
+.services__item h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.services__item p {
+	color: #777777;
+	font-size: 14px;
+	line-height: 1.55em;
+}
+
+.services__item:last-child {
+	float: right;
+}
+
+.services__item:nth-child(2) {
+	margin-left: 60px;
+}
+
+#services {
+	padding-bottom: 120px;
+}
+
+/*----------------PORTFOLIO------------------*/
+
+#portfolio {
+	background: #f7f7f7;
+	padding-bottom: 120px;
+}
+
+.works {
+	margin-top: 70px;
+}
+
+.works img {
+	float: left;
+}
+
+.works img:last-child {
+	float: right;
+}
+
+.works img:nth-child(2) {
+	margin-left: 29px;
+}
+
+
+/*----------------ABOUT US------------------*/
+
+
+
+.information_item {
+	padding-top: 85px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.information_item p {
+	width: 50%;
+}
+
+.information_item h3 {
+	width: 30%;
+}
+
+
+
+
